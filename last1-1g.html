@@ -25,21 +25,21 @@ body { margin:0; width: 100%; background: black; transition: all 0.7s;}
 #black {background-color: black; position: fixed; left:53%; top: 4%; width: 25%; height: 10%;z-index: 1;}
 
 #whiteline{width: 41%; height: 90%; position: fixed; left: 7%; top: 5%; opacity: 0.3; }
-#whiteline img{height: 95%; position: absolute; bottom: 0.7%; left: 13%;}
+#whiteline img{height: 100%; position: absolute; bottom: 0.7%; left: 13%;}
 #whiteline2{width: 41%; height: 90%; position: absolute; right: 7%; top: 5%; opacity: 0.3; z-index: 2;}
 
 #photo {width: 41%; height: 90%; position: fixed; left: 7%; top: 5%; display: none;}
-#photo img{height: 95%; position: absolute; bottom: 0.7%; left: 13%;}
+#photo img{height: 100%; position: absolute; bottom: 0.7%; left: 13%;}
 
 #processing {width: 41%; height: 90%; position: fixed; left: 7%; top: 5%; display: none;}
-#processing img{height: 95%; position: absolute; bottom: 0.7%; left: 13%;}
+#processing img{height:100%; position: absolute; bottom: 0.7%; left: 13%;}
 
 #drawing {width: 41%; height: 90%; position: fixed; left: 7%; top: 5%; display: none;}
-#drawing img{height: 95%; position: absolute; bottom: 0.7%; left: 13%;}
+#drawing img{height: 100%; position: absolute; bottom: 0.7%; left: 13%;}
 
-#reddiv1 {width: 6%; height: 5%; position: absolute; left: 1.3%; top: 9%; background: rgb(20,76,67);}
-#reddiv2 {width: 6%; height: 5%; position: absolute; left: 1.3%; top: 16%; background: rgb(20,76,67);}
-#reddiv3 {width: 6%; height: 5%; position: absolute; left: 1.3%; top: 23%; background: rgb(20,76,67);}
+#reddiv1 {width: 7%; height: 5%; position: absolute; left: 1.3%; top: 9%; background: rgb(20,76,67); border: 3px solid black;}
+#reddiv2 {width: 7%; height: 5%; position: absolute; left: 1.3%; top: 16%; background: rgb(20,76,67); border: 3px solid black;}
+#reddiv3 {width: 7%; height: 5%; position: absolute; left: 1.3%; top: 23%; background: rgb(20,76,67); border: 3px solid black;}
 
 
 
@@ -57,13 +57,14 @@ body { margin:0; width: 100%; background: black; transition: all 0.7s;}
 #go4 {width: 2%; position: absolute; left: 49%; bottom: 5%; display: none;}
 /*#category {width: 120px; position: relative; float: left; margin: 30px 30px;}*/
 
-#drag{width: 300px; position: absolute; top: -50px; left: -50px; opacity: 1; display: inline; animation: plz 5s alternate ;}
-#drag img {width: 100%; position: absolute; top: 0px; left: 0px; display: inline;}
+#drag{width: 200px; height: 200px; position: absolute; top: -50px; left: -50px; opacity: 1; display: inline; animation: plz 4s alternate; animation-delay: 1s; background: rgb(20,76,67);}
+#drag img {width: 100%; position: absolute; opacity: 1; top: 0px; left: 0px; display: inline;}
 #drag:hover{opacity: 0.7; z-index: 999; transition: all 0.1s;}
 @keyframes plz{
-	0%{opacity: 0.6;}
-	33%{opacity: 1;}
-	66%{opacity: 0.6;}
+	0%{opacity: 1;}
+	25%{opacity: 0.6;}
+	50%{opacity: 1;}
+	75%{opacity: 0.6;}
 	100%{opacity: 1;}
 }
 
@@ -79,10 +80,13 @@ body { margin:0; width: 100%; background: black; transition: all 0.7s;}
 
 #popupgeul {position: absolute; top:30px; left:0px; bottom: 0px; right: 0px; width: 20%; margin: 30% auto; display: none; color: white; background: red;}
 
-#my-image {width: 10%; position: absolute; right: 4.3%; top: 6%; background-color: #af0808; z-index: 999;}
-#my-image2 {width: 7%; position: absolute; right: 4.7%; top: 13%; background-color: #af0808; z-index: 999;}
-#my-image3 {width: 7%; position: absolute; right: 4.7%; top: 13%; background-color: #af0808; z-index: 999;}
-#my-image3 {width: 7%; position: absolute; right: 4.7%; top: 13%; background-color: #af0808; z-index: 999;}
+#my-image {width: 10%; position: absolute; right: 7.3%; top: 6%; background-color: rgb(20,76,67); z-index: 999;}
+#my-image2 {width: 12%; position: absolute; right: 7.3%; top: 6%; background-color: rgb(20,76,67); z-index: 999;}
+#my-image3 {width: 12%; position: absolute; right: 7.3%; top: 6%; background-color: rgb(20,76,67); z-index: 999;}
+#my-image4 {width: 12%; position: absolute; right: 7.3%; top: 6%; background-color: rgb(20,76,67); z-index: 999;}
+#my-image5 {width: 7%; position: absolute; right: 7.3%; top: 13%; background-color: rgb(20,76,67); z-index: 999;}
+#my-image6 {width: 7%; position: absolute; right: 7.3%; top: 13%; background-color: rgb(20,76,67); z-index: 999;}
+#my-image7 {width: 7%; position: absolute; right: 7.3%; top: 13%; background-color: rgb(20,76,67); z-index: 999;}
 
 *h1,h3,p{font-family: 'Nanum Myeongjo', serif;}
 	h2,h7{font-family: 'Permanent Marker', cursive;}
@@ -128,7 +132,7 @@ span:hover {color: rgb(20,76,67);}
 	onMouseOver="this.src='./last/go1.png'"
 	onMouseOut="this.src='./last/go.png'"></a>
 
-	<a href="last1-1.html"><img src="./last/go.png" id="go_1" 
+	<a href="last1-1g.html"><img src="./last/go.png" id="go_1" 
 	style="transform: rotate(180deg);" 
 	onMouseOver="this.src='./last/go1.png'"
 	onMouseOut="this.src='./last/go.png'"> </a>
@@ -145,20 +149,16 @@ span:hover {color: rgb(20,76,67);}
 	onMouseOver="this.src='./last/go1.png'"
 	onMouseOut="this.src='./last/go.png'">
 
-	<img src="./last/go.png" id="go4" 
-	onMouseOver="this.src='./last/go1.png'"
-	onMouseOut="this.src='./last/go.png'">
-
 	<div>
 	<div id="box" style="-webkit-text-stroke: 1px white; transition: all 1s;"><h2> whose<br>fingerprint<br>is this?</h2></div>
 	<div id="box2" style="-webkit-text-stroke: 1px white; transition: all 1s;"><h2> whose<br>story<br>is this?</h2></div>
 
 	<div id="boxes">
-		<h3><a id="my-text" class="text1">누구의 지문일까요?</h3>
+		<h3><a id="my-text" class="text1">누구의 지문일까요?</a></h3>
 		-------------------------------------------------------
-		<h5><a id="my-text2" class="text2">정기문<br>= 감성형!</h5><h5>약지 방향으로 긴 타원형을 그리듯 흘러가는 형태로, 한국인이 가장 많이 가지고 있는 지문 유형.</a></h5>
-		<h4>특징 :<br>감수성이 풍부하고 창의적이지만 충동적이다. 따라서 끊임없는 존중과 관심을 쏟아주어야한다.</h4><h4>감성적이며 정서적 반응이 비교적 직선적이고 자유로운 방식으로 일을 처리하며 민감한 편이다. 성격이 급하고 잘 기다리지 못하는 편이며 단체활동과 조화를 중시하지만 충동적인 성향이 있다. 매우 열정적인 성향으로 창의력이 뛰어나고 연민이 많고 다른 사람의 아픔을 민감하게 느낀다. 신뢰와 온화함으로 대인관계를 유지하며 낭만적인 것을 추구하고 감정 반응이 강렬하다.</h4>
-		<h4>단점 :<br>소외당하는 느낌을 힘들어하기 때문에 상대방의 거절을 두려워하는 편이다. 자신이 누군가에게 중요한 사람이라는 느낌이 들지 않거나 의미없게 받아들여지는 것을 매우 싫어하는데 스스로 정한 기준에 도달하지 못했거나 틀렸다는 느낌 때문이다. 감정조절 능력과 인내심이 부족하며 상대방이나 사물을 비교하고 비관하기도 한다.<br><br>다루는 방법 :<br>감정기복에 시달리지 않기 위해 안정감과 일관된 행동 모델을 제시해줘야 한다. 단체활동을 통해 자기만의 세계에 빠져나갈 수 있도록 도와주어야 하며, 감정기복이 심할 때는 스스로 평정을 찾을 수 있게 인내하며 기다려주는 것이 좋다. 흥미를 채울 수 있게 도와주며, 성취감을 맛  수 있도록 배려해야 한다. 다른 사람으로부터 존중과 관심을 받기 원하므로 심리적인 안정감을 찾을 수 있도록 배려하는 것이 좋다. 다른 사람과 비교하며 비평하지 말고, 단체의 목표를 함께 노력하고자 권하며 명확한 목표를 설정해 실행하도록 유도해야 한다.<br><br>유망직업 :<br>서비스업이나 교사, 연기자, 간호사 등.</h4></div>
+		<h5><a id="my-text2" class="text2">호형문<br>= 원칙주의자!</a></h5><h5><a id="my-text3" class="text3">융선이 한쪽에서부터 다른 쪽으로 흐르며 삼각점이 없는 형태</a></h5>
+		<h4>특징 :<br>깊게 생각하는 편이며 안정감이 높고 학식이 풍부하다.</h4><h4>예의 바르고 독립심 강하며 단순한 삶을 선호하고 위기에 직면했을 때 차분히 대응한다. <a id="my-text4" class="text4">한 번 형성된 관계에 있어서는 의리, 신뢰, 충성심 등 관계가 오래도록 지속되어 깊이있는 교우를 선호하는 경향이 있다.</a></h4>
+		<h4>단점 :<br>갑자기 일어난 상황이나 어떤 강렬한 느낌에 두려움을 느끼며 사생활이 침해당하는 것을 꺼려하고 만족스럽지 못한 환경이나 공허한 느낌에 대해 불안해한다. 창의력과 열정을 발휘하는 능력이 풍부하지 못하다.<br><br><h4><a id="my-text5" class="text5">다루는 방법 :</a></h4><h4><br>스스로 내린 결정이 성취할 수 있도록 기회를 제공하고 본인의 감정을 마음에 두지 않고 밖으로 표현할 수 있게 도와줘야한다. 다른 사람이 자신의 내면 세계에 대해 알고자 하는 것을 스트레스나 사생활 침해로 받아들이지 않도록 배려하는 것이 좋다. 칭찬과 격려를 해주며 자존감을 높일 수 있게 유도해주며 자신의 의견을 적극적으로 이야기할 수 있도록 분위기를 조성하는 것이 좋다. 지시할 때는 명확한 내용을 표명해야 하며 과정된 표현이나 사실이 아닌 것을 말했을 때는 역효과를 낼 수 있으므로 공정함과 진실성을 강조해야 한다. 가능한 계획된 일을 규범적, 규칙적으로 이끌어하는 것이 가장 적합한 대화 요령이다.<br><br>유망직업 :<br>공무원, 교사, 기술직, 회계직, 세무, 금융 관련 일 등.</h4></div>
 	</div>
 
 	<div id="boxes2">
@@ -168,9 +168,9 @@ span:hover {color: rgb(20,76,67);}
 		<h4>그녀의 하루는 <a id="my-text3" class="text3"><span><b>미쯔</b></span></a>로 시작된다. 아침에 <a id="my-text4" class="text4"><span><b>통학생의 비애</b></span></a>로 일찍 일어나  느껴지는 아침의 잠을 세수 한 번으로 씻어버리고, 자신의 활력소인 반려동물 미쯔에게 인사를 해주며 이불을 덮어주며 쌀쌀한 바람과 맞서기 위해 나오는 그녀.<br>하지만 아직도 느껴지는 잠을 떨치기 위해 아침마다 아메리카노 한 잔씩을 마시는 것은 버릇되었다. 어디를 가든 무엇을 하든 그의 손에는 늘 아메리카노 한 잔이 있다. 그래서 근처 카페의 커피 맛을 알고 구별할 수 있는 재능까지 갖게되며, 학교 내 카페의 쿠폰은 이미 여러번 채워 공짜 커피까지 많이 먹었다. 심지어는 카페 매니저와 알바생은 그녀의 메뉴가 무엇인지 얼굴만 봐도 알아버리는 명실상부 커피매니아이다.<br>이 사람은 로스트아크를 시작한다고 두 달째하고 말만 있다. 로스트아크가 서비스를 런칭했던 시기부터 같이 게임을 시작하자고 했던 친구가 만렙을 찍었음에도 이 사람은 시작조차하지 않았다. 주변에 오버워치하는 하는 친구들이 정말 너무나 많지만 그녀는 절대 오버워치 따위엔 관심 갖지도 않는다.<br><br><br>자주쓰는 단어 : 와베스, 분조장, 미쯔, 커피, 한딱까리, 신상요정, 술찌, 재라만시</h4></div>
 	</div>
 
-	<div class="drag inline"><img src="./last/face1.png" id="drag" style="position: absolute; top: 90px; left: 150px;"></div>
-	<div class="drag inline"><img src="./last/face2.png" id="drag" style="position: absolute; top: 230px; left: 390px;"></div>
-	<div class="drag inline"><img src="./last/face3.png" id="drag" style="position: absolute; top: 460px; left: 200px;"></div>
+	<div class="drag inline"><img src="./last/print.png" id="drag" style="position: absolute; top: 90px; left: 150px;"></div>
+	<div class="drag inline"><img src="./last/print.png" id="drag" style="position: absolute; top: 230px; left: 390px;"></div>
+	<div class="drag inline"><img src="./last/print.png" id="drag" style="position: absolute; top: 460px; left: 200px;"></div>
 
 	<script type="text/javascript">
 	(function(){
@@ -261,6 +261,7 @@ span:hover {color: rgb(20,76,67);}
 				photo.style.display = "inline";
 				park.style.display = "none";
 				drag.style.display = "none";
+				drag.style.opacity = 0;
             }
             else if (toggle = "on") {
                 toggle ="off";
@@ -300,17 +301,19 @@ span:hover {color: rgb(20,76,67);}
 
 	</script>
 
-  <img id="my-image" src="./last/print.png" class="ima1" style="display:none;"> 
-  <img id="my-image2" src="./last/face3.png" class="ima2" style="display:none;">
-  <img id="my-image3" src="./last/face3.png" class="ima3" style="display:none;">
-  <img id="my-image4" src="./last/face3.png" class="ima4" style="display:none;"> 
+  <img id="my-image" src="./last/print3.png" class="ima1" style="display:none;"> 
+  <div id="my-image2" class="ima2" style="display:none;"><h5>호문형은 4가지의 지문 종류 중 원칙주의자적인 성향이 가장 뚜렷한 형이다.</h5></div>
+  <div id="my-image3" class="ima3" style="display:none;"><h5>물 흐르듯이 흐르는 지문인 것이 포.인.트</h5></div>
+  <div id="my-image4" class="ima4" style="display:none;"><h5>간단히 말해서 좁고 깊은 교우관계를 즐긴다고 한다.</h5></div>
+  <div id="my-image5" class="ima5" style="display:none;">룸메이트에겐 꿀팁</div>
+  <div id="my-image5" class="ima5" style="display:none;">간단히 말해서 좁고 깊은 교우관계를 즐긴다고 한다.</div>
 
   <script> 
       document.getElementById("my-text").addEventListener("mouseover", function () {document.getElementById("my-image").style.display = ""; 
-      	document.getElementById("sajock").style.display = "";
+      	document.getElementById("my-image").style.display = "";
       }); 
       document.getElementById("my-text").addEventListener("mouseleave", function () {document.getElementById("my-image").style.display = "none";
-      document.getElementById("sajock").style.display = "none"; 
+      document.getElementById("my-image").style.display = "none"; 
       }); 
 
       document.getElementById("my-text2").addEventListener("mouseover", function () { 
@@ -325,6 +328,20 @@ span:hover {color: rgb(20,76,67);}
       }); 
       document.getElementById("my-text3").addEventListener("mouseleave", function () { 
             document.getElementById("my-image3").style.display = "none"; 
+      }); 
+
+      ocument.getElementById("my-text4").addEventListener("mouseover", function () { 
+            document.getElementById("my-image4").style.display = ""; 
+      }); 
+      document.getElementById("my-text4").addEventListener("mouseleave", function () { 
+            document.getElementById("my-image4").style.display = "none"; 
+      }); 
+
+      ocument.getElementById("my-text5").addEventListener("mouseover", function () { 
+            document.getElementById("my-image5").style.display = ""; 
+      }); 
+      document.getElementById("my-text5").addEventListener("mouseleave", function () { 
+            document.getElementById("my-image5").style.display = "none"; 
       }); 
   </script> 
 
